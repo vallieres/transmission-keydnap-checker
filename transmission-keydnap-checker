@@ -2,15 +2,15 @@
 
 # Simple script to check if you are infected with the Keydnap malware dropped by an infected version of Transmission 2.92
 
-echo "\n\n#######################################################"
-echo "#            Keydnap Malware Checker v.1.0            #"
-echo "#    (sadly introduced through Transmission... :'(    #"
-echo "#                    👾 👾 👾 👾                     #"
-echo "#######################################################\n"
+echo -e "\n\n#######################################################"
+echo -e "#            Keydnap Malware Checker v.1.0            #"
+echo -e "#    (sadly introduced through Transmission... :'(    #"
+echo -e "#                    👾 👾 👾 👾                     #"
+echo -e "#######################################################\n"
 sleep 0.5
 
-echo "👓  Homework  👓\n  Interested in the details of the infection and all?"
-echo "  Visit: http://www.welivesecurity.com/2016/08/30/osxkeydnap-spreads-via-signed-transmission-application/"
+echo -e "👓  Homework  👓\n  Interested in the details of the infection and all?"
+echo -e "  Visit: http://www.welivesecurity.com/2016/08/30/osxkeydnap-spreads-via-signed-transmission-application/"
 
 # 1. Create ProgressBar function
 # 1.1 Input is currentState($1) and totalState($2)
@@ -31,7 +31,7 @@ printf "\rScan Progress : [${_fill// /#}${_empty// /-}] ${_progress}%%"
 }
 sleep 0.5
 
-echo "\n\n👷  Now scanning for files...\n\n"
+echo -e "\n\n👷  Now scanning for files...\n\n"
 ProgressBar 1 100
 sleep 0.3
 
@@ -115,31 +115,31 @@ sleep 0.5
 
 # Summary
 if [ $infected = 1 ]; then
-  echo "\n\n\n         🚨 🚨 🚨  INFECTION DETECTED!  🚨 🚨 🚨 "
+  echo -e "\n\n\n         🚨 🚨 🚨  INFECTION DETECTED!  🚨 🚨 🚨 "
 
-  echo "\n--------------------------- Infection Report ----------------------------"
-  echo "\n 🚨 Malicious File(s) Found! 🚨\n"
-  echo "$message"
-  echo "-------------------------------------------------------------------------\n\n"
+  echo -e "\n--------------------------- Infection Report ----------------------------"
+  echo -e "\n 🚨 Malicious File(s) Found! 🚨\n"
+  echo -e "$message"
+  echo -e "-------------------------------------------------------------------------\n\n"
 
-  echo "-------------------------------- Summary --------------------------------\n"
-  echo "      👎  NOT 🆗!  👎"
-  echo "      You need to cleanup your machine, you are infected by Keydnap!\n"
-  echo "      Instructions are available here:"
-  echo "      https://github.com/vallieres/transmission-keydnap-checker/cleanup.md\n"
-  echo "-------------------------------------------------------------------------\n\n"
+  echo -e "-------------------------------- Summary --------------------------------\n"
+  echo -e "      👎  NOT 🆗!  👎"
+  echo -e "      You need to cleanup your machine, you are infected by Keydnap!\n"
+  echo -e "      Instructions are available here:"
+  echo -e "      https://github.com/vallieres/transmission-keydnap-checker/cleanup.md\n"
+  echo -e "-------------------------------------------------------------------------\n\n"
 
 else
-  echo "\n\n\n          ✨ ✨ ✨  YOU ARE CLEAN!  ✨ ✨ ✨"
+  echo -e "\n\n\n          ✨ ✨ ✨  YOU ARE CLEAN!  ✨ ✨ ✨"
 
-  echo "\n\n-------------------------------- Summary --------------------------------\n"
-  echo "      👍  Everythin' is A-🆗!  👍"
-  echo "      You can now breath and continue your torrenting in peace!\n"
-  echo "-------------------------------------------------------------------------\n\n"
+  echo -e "\n\n-------------------------------- Summary --------------------------------\n"
+  echo -e "      👍  Everythin' is A-🆗!  👍"
+  echo -e "      You can now breath and continue your torrenting in peace!\n"
+  echo -e "-------------------------------------------------------------------------\n\n"
 fi
 
 
-echo "📣  Feedback, comment? Head over the GitHub repo to log issues, PR or ⭐!"
-echo "      https://github.com/vallieres/transmission-keydnap-checker\n"
+echo -e "📣  Feedback, comment? Head over the GitHub repo to log issues, PR or ⭐!"
+echo -e "      https://github.com/vallieres/transmission-keydnap-checker\n"
 
-echo "Here's a potato: 🍠  (a sweet roasted one, even better!)\n\n"
+echo -e "Here's a potato: 🍠  (a sweet roasted one, even better!)\n\n"

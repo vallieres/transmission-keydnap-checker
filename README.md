@@ -2,7 +2,7 @@
 
 *Simple Homebrew command to scan your system for Keydnap*
 
-With the recent Keydnap malware distribution throught a Transmission application package, I stumbled accross a few checks to do to make sure that my system was not infected.
+With the recent Keydnap malware distribution through a Transmission application package, I stumbled across a few checks to do to make sure that my system was not infected.
 
 Being the nerd I am, instead of checking for the couple of files manually, I wrote a script and distribute it through Homebrew. Every occasion is a good occasion to learn!
 
@@ -26,8 +26,8 @@ Refer to [Cleanup.md](https://github.com/vallieres/transmission-keydnap-checker/
 
 ## Liability
 
-Basically I wrote this for funzies. So don't think it's 100% bulletproof, it seems to work and I cannot be held liable if it does not properly scan you system. 
+Basically I wrote this for funzies. So don't think it's 100% bulletproof, it seems to work and I cannot be held liable if it does not properly scan your system. 
 
-Remember that Keydnap is now at version 1.5 and it could get an update tommorow and reinfect Transmission or another package.
+Remember that Keydnap is now at version 1.5 and it could get an update tomorrow and reinfect Transmission or another package.
 
-Refer to the [License](https://github.com/vallieres/transmission-keydnap-checker/blob/master/LICENSE) for details of liability.
+Refer to the [Licence](https://github.com/vallieres/transmission-keydnap-checker/blob/master/LICENSE) for details of liability.
